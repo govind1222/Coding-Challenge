@@ -30,17 +30,19 @@ While researching methods for finding the optimal number of clusters for a given
 
 The plot shows that the difference in the sum of the squared error decreases rapidly at k=2 and after. This suggests that the number of clusters is 2. 
 
-I also implemented the silhouette method using the silhouette score function in the scilearn package for the KMeans models with more than 2 clusters and plotted that data as well. This method is used to support the results of the elbow method, especially if the squared error method doesn't provide a definite optimal k value.
+I also implemented the silhouette method using the silhouette score function in the sklearn package for the KMeans models with more than 2 clusters and plotted that data as well. This method is used to support the results of the elbow method, especially if the squared error method doesn't provide a definite optimal k value.
 
 ![Image of Silhouette Score Plot](SilhouetteScorePlot.png)
 <br/>
 
 The number of clusters is at the peak of the graph, which on this plot, is clearly at k=2. 
 
+I used the sklearn, numpy, and matplotlib.pyplot libraries.
+
 ## Solution
 Number of clusters is 2.
 
-##Sources
+## Sources
 https://www.geeksforgeeks.org/elbow-method-for-optimal-value-of-k-in-kmeans/
 https://medium.com/analytics-vidhya/how-to-determine-the-optimal-k-for-k-means-708505d204eb
 
